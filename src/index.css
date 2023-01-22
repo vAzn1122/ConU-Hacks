@@ -39,7 +39,7 @@ body {
 }
 
 .wrapper h3 {
-    color: #363d55;
+    color: #009993;
     font-weight: 500;
     margin-bottom: 0.6em;
 }
@@ -50,14 +50,14 @@ body {
     padding: 0.6em 0.3em;
     border: 1px solid #d0d0d0;
     border-radius: 0.3em;
-    color: #414a67;
+    color: #009993;
     outline: none;
     font-weight: 400;
     margin-bottom: 0.6em;
 }
 
 .container input:focus {
-    border-color: #587ef4;
+    border-color: #009993;
 }
 
 .total-amount-container,
@@ -69,7 +69,7 @@ body {
 }
 
 .output-container {
-    background-color: #587ef4;
+    background-color: #009993;
     color: #ffffff;
     border-radius: 0.3em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
@@ -92,7 +92,7 @@ body {
 .submit {
     font-size: 1em;
     margin-top: 0.8em;
-    background-color: #587ef4;
+    background-color: #009993;
     border: none;
     outline: none;
     color: #ffffff;
@@ -110,7 +110,7 @@ body {
 
 .sublist-content {
     width: 100%;
-    border-left: 0.3em solid #587ef4;
+    border-left: 0.3em solid #009993;
     margin-bottom: 0.6em;
     padding: 0.5em 1em;
     display: grid;
@@ -119,11 +119,11 @@ body {
 
 .product {
     font-weight: 500;
-    color: #363d55;
+    color: #009993;
 }
 
 .amount {
-    color: #414a67;
+    color: #009993;
     margin-left: 20%;
 }
 
@@ -155,7 +155,7 @@ body {
     cursor: pointer;
     margin-right: 1.5em;
     border: none;
-    color: #587ef4;
+    color: #009993;
 }
 
 @media screen and (max-width: 600px) {
