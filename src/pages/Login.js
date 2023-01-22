@@ -8,6 +8,7 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const [error, setError] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -29,7 +30,7 @@ function Login() {
           <input type="text" name="email" placeholder="Email (name@domain.com)" id="email" onChange={(e) => setEmail(e.target.value)} />
         </div>
         <div className="form-section">
-          <input type="password" name="password" placeholder="Password" id="email" onChange={(e) => setPassword(e.target.value)} />
+          <input type="password" name="password" placeholder="Password" id="password" onChange={(e) => setPassword(e.target.value)} />
         </div>
 
         <p className="low-vis-text">
@@ -39,9 +40,13 @@ function Login() {
           </Link>
         </p>
 
-        <div className="login-button">
+        <div className="form-button">
           <input type="submit" value="Sign In" />
         </div>
+        {/* Error Message */}
+        {error !== "" ?
+          <div className="error-msg"> {error} </div> : ""
+        }
       </form>
     </div>
   );
