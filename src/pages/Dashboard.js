@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import '../App.css';
+import './Dashboard.css';
+import BudgetCalculator from '../components/BudgetCalculator.js';
 
 function Dashboard() {
 
@@ -9,6 +12,12 @@ function Dashboard() {
 
   return (
     <div className="App">
+
+        {/* Budget Calculator */}
+        < BudgetCalculator />
+
+
+
       <html lang="en">
 
       <head>

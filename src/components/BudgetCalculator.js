@@ -16,7 +16,7 @@ function BudgetCalculator() {
         <div>
             {/* Write html normally below and any css in the BudgetCalculator.css file */}
 
-
+            <h1>I am budget calculator component</h1>
 
 
 
