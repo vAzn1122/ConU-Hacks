@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../App.css';
-import './Registration.css';
+import './Login.css';
 
 function Registration() {
 
@@ -17,6 +17,10 @@ function Registration() {
   e.preventDefault();
 
   // @TODO: Check if any entries are empty
+  if (!fname || !lname || !email || !password || !checkpassword) {
+    setError("Please fill out all fields.");
+    return;
+  }
   
   // If no empty fields, navigate back to login
   navigate("/login");
@@ -24,7 +28,7 @@ function Registration() {
 
 
   return (
-    <div className="form">
+    <div className="form-block">
       <form onSubmit={handleSubmit}>
         <h2>Register</h2>
         <p>Fill in the fields to register for an account</p> 
@@ -42,7 +46,7 @@ function Registration() {
           <input type="password" name="password" placeholder="Password" id="password" onChange={(e) => setPassword(e.target.value)} />
         </div>
         <div className="form-section">
-          <input type="password" name="repeat password" placeholder="Password" id="checkpassword" onChange={(e) => setCheckPassword(e.target.value)} />
+          <input type="password" name="check password" placeholder="Re-enter Password" id="checkpassword" onChange={(e) => setCheckPassword(e.target.value)} />
         </div>
 
         <div className="form-button">

@@ -14,14 +14,18 @@ function Login() {
     e.preventDefault();
 
     // @TODO: Check if email or password is empty
+    if (!email || !password) {
+      setError("Please fill out all fields.");
+      return;
+    }
     
     // If email and password is correct, navigate to dashboard
     navigate("/dashboard");
   }
  
   return (
-    <div className="form">
-      {/* <img className="logo" src={logo} alt="jade_logo" /> */}
+    <div className="form-block">
+      <img className="logo" src='jade-logo.jpg' alt="jade_logo" />
       <form onSubmit={handleSubmit}>
         <h2>Login</h2>
         <p>Sign into your account</p> 
@@ -35,7 +39,7 @@ function Login() {
 
         <p className="low-vis-text">
           Don't have an account? {" "}
-          <Link className="links" to="/registration" >
+          <Link className="links" to="/registration" style={{ color: '#fff' }}>
             Register
           </Link>
         </p>
