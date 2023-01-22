@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../App.css';
-import './Login.css';
+import './Registration.css';
 
-function Login() {
+function Registration() {
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const navigate = useNavigate();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
-  function handleSubmit(e) {
+    function handleSubmit(e) {
     e.preventDefault();
 
-    // @TODO: Check if email or password is empty
+    // @TODO: Check if any entries are empty
     
-    // If email and password is correct, navigate to dashboard
-    navigate("/dashboard");
-  }
- 
+    // If no empty fields, navigate back to login
+    navigate("/login");
+    }
+
+
   return (
     <div className="form">
-      {/* <img className="logo" src={logo} alt="jade_logo" /> */}
       <form onSubmit={handleSubmit}>
-        <h2>Login</h2>
-        <p>Sign into your account</p> 
+        <h2>Register</h2>
+        <p>Fill in the fields to successfully register</p> 
         
         <div className="form-section">
           <input type="text" name="email" placeholder="Email (name@domain.com)" id="email" onChange={(e) => setEmail(e.target.value)} />
@@ -47,4 +47,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Registration;
