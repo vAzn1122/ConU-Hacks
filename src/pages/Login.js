@@ -1,26 +1,17 @@
 import React from 'react';
 import '../App.css';
 
-function App() {
+function Login() {
+
+
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          A tutorial app created by <a
-          className="App-link"
-          href="https://mjiang.dev"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{textDecoration: 'none'}}
-          >
-            He Jiang
-          </a>.
-          
-        </p>
-        
-      </header>
+      <h1>Hello this is Login</h1>
     </div>
   );
 }
 
-export default App;
+export default Login;

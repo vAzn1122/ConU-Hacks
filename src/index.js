@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 import Login from './pages/Login.js';
+import Registration from './pages/Resgistration.js';
+import Dashboard from './pages/Dashboard.js';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -13,8 +15,8 @@ root.render(
       <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/registration" element={<Login />} />
-          <Route path="/dashboard" element={<Login />} />
+          <Route path="/registration" element={<Registration />} />
+          <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   </React.StrictMode>
